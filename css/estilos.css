@@ -45,6 +45,48 @@ p {
   font-size: 1.8rem;
 }
 
+/*  TAMAÑOS ICONOS  */
+
+.ico-1x {
+  font-size: 1.6rem;
+}
+
+.ico-2x {
+  font-size: 3.2rem;
+}
+
+.ico-3x {
+  font-size: 4.8rem;
+}
+
+.ico-4x {
+  font-size: 6.4rem;
+}
+
+.ico-5x {
+  font-size: 8rem;
+}
+
+.ico-6x {
+  font-size: 9.6rem;
+}
+
+.ico-7x {
+  font-size: 11.2rem;
+}
+
+.ico-8x {
+  font-size: 12.8rem;
+}
+
+.ico-9x {
+  font-size: 14.4rem;
+}
+
+.ico-10x {
+  font-size: 16rem;
+}
+
 nav ul li {
   display: inline;
   padding-right: 20px;
@@ -271,7 +313,6 @@ ul {
   text-align: center;
   padding-top: 20px;
   max-width: 1000px;
-
 }
 
 /* CONTACTO */
@@ -584,7 +625,6 @@ footer nav ul li a {
   background-color: #ec6b75;
 }
 
-
 /* PLAN BASICO */
 .tbodyBasico {
   padding: 0;
@@ -610,21 +650,20 @@ footer nav ul li a {
   background-color: #39b6b2;
 }
 
-
 /* PLAN PREMIUM */
 .tbodyPremium {
   padding: 0;
-  border: solid 1px #FFCB77;
+  border: solid 1px #ffcb77;
 }
 
 .stylePlanPremium {
-  background-color: #FFCB77;
+  background-color: #ffcb77;
   color: white;
 }
 
 .precioPremium {
   background-color: #f2f2f2;
-  color: #FFCB77;
+  color: #ffcb77;
 }
 
 .precioPremium h2 {
@@ -633,7 +672,7 @@ footer nav ul li a {
 }
 
 .botonPremium {
-  background-color: #FFCB77;
+  background-color: #ffcb77;
 }
 
 /**/
@@ -645,7 +684,6 @@ footer nav ul li a {
 /**/
 
 /*     Planes ECONOMICO - BASICO - PREMIUM     */
-
 
 .bannerPlanEconomico {
   text-align: center;
@@ -665,6 +703,41 @@ footer nav ul li a {
   padding-top: 150px;
 }
 
+.bannerPlanEconomico p {
+  max-width: 1000px;
+}
+
+.sectionDescripcionPlan {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 70px;
+}
+
+.tablaDescripcionPlanes {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.botonDescripcionPlanEconomico {
+  border: none;
+  margin: 10px;
+  border-radius: 50px;
+  width: 150px;
+  height: 40px;
+  background-color: #ec6b75;
+}
+
+.botonDescripcionPlanEconomico a {
+  color: white;
+}
+
+.tablaPlanes td {
+  padding: 15px;
+}
 
 /**/
 
