@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nosotros | HexaDsign</title>
+    <!-- ICON FONTS -->
+    <link rel="stylesheet" href="libs/iconHexaDsign/style.css">
+    <script src="https://kit.fontawesome.com/0138bab574.js" crossorigin="anonymous"></script>
     <!-- GOOGLE FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,11 +16,21 @@
     <link rel="stylesheet" href="./css/estilos.css">
 </head>
 <body>
-    <header class="menuMain">
-        <a href="./index.html">
-            <img src="./img/HDLogo.png" alt="Logo HexaDsign">
-        </a>
-        <nav class="menuMain navMenu">
+
+    <header>
+        <nav>
+            <div class="navLogoMenu">
+                <a href="./index.html">
+                    <img src="./img/Logo.png" alt="Logo HexaDsign">
+                </a>
+            </div>
+            
+            <input type="checkbox" id="click">
+
+            <label for="click" class="menuHamburguesa">
+                <i class="fas fa-bars"></i>
+            </label>
+
             <ul>
                 <li>
                     <a href="./index.html">Inicio</a>
@@ -33,13 +46,13 @@
                 </li>
             </ul>
         </nav>
+
     </header>
 
     <section class="bannerQuienesSomos">
-        <section class="bannerQuienesSomosOverlay">
-            <p>Nosotros somos HexaDsign</p>            
-        </section>
 
+            <h1>Nosotros somos HexaDsign</h1>     
+        
     </section>
 
     <section class="textoQuienesSomos">
@@ -55,89 +68,44 @@
 
     </section>
 
+    <section class="sectionEquipo">
 
-    <section class="equipo">
-        <h1>Equipo</h1>
-        <table class="tablaEquipo">
-            <tr>
-                <th>Cargo #1</th>
-                <th>Cargo #2</th>
-                <th>Cargo #3</th>
-                <th>Cargo #4</th>
-                <th>Cargo #5</th>
-                <th>Cargo #6</th>
-            </tr>
-            <tr>
-                <td class="avatar1"></td>
-                <td class="avatar2"></td>
-                <td class="avatar3"></td>
-                <td class="avatar4"></td>
-                <td class="avatar5"></td>
-                <td class="avatar6"></td>
-            </tr>
-            <tr>
-                <td>
-                    Nombre editor #1
-                </td>
-                <td>
-                    Nombre editor #2
-                </td>
-                <td>
-                    Nombre editor #3
-                </td>
-                <td>
-                    Nombre editor #4
-                </td>
-                <td>
-                    Nombre editor #5
-                </td>
-                <td>
-                    Nombre editor #6
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    Definición editor #1
-                </td>
-                <td>
-                    Definición editor #2
-                </td>
-                <td>
-                    Definición editor #3
-                </td>
-                <td>
-                    Definición editor #4
-                </td>
-                <td>
-                    Definición editor #5
-                </td>
-                <td
-                >Definición editor #6
-                </td>
-            </tr>
-        </table>
+        <div>
+            <h2>Equipo</h2>
+        </div>
+
+        <div class="contenedorCartaEquipo">
+            <div class="cartaIndividual">
+                <img src="./img/avatar_1.png" alt="">
+                <h3>Colaborador #1</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta deserunt, animi tempore possimus culpa minima accusamus molestias, distinctio odit nihil sed labore. Consequatur fuga a magni eos sit quo quidem?</p>
+            </div>
+
+            
+            <div class="cartaIndividual">
+                <img src="./img/avatar_2.png" alt="">
+                <h3>Colaborador #2</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta deserunt, animi tempore possimus culpa minima accusamus molestias, distinctio odit nihil sed labore. Consequatur fuga a magni eos sit quo quidem?</p>
+            </div>
+
+            
+            <div class="cartaIndividual">
+                <img src="./img/avatar_3.png" alt="">
+                <h3>Colaborador #3</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta deserunt, animi tempore possimus culpa minima accusamus molestias, distinctio odit nihil sed labore. Consequatur fuga a magni eos sit quo quidem?</p>
+            </div>
+
+            
+            <div class="cartaIndividual">
+                <img src="./img/avatar_4.png" alt="">
+                <h3>Colaborador #4</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta deserunt, animi tempore possimus culpa minima accusamus molestias, distinctio odit nihil sed labore. Consequatur fuga a magni eos sit quo quidem?</p>
+            </div>
+        </div>
 
     </section>
 
     <footer>
-        
-        <!-- Menú footer -->
-        <nav>
-            <ul>
-                <li>
-                    <a href="./index.html">Inicio</a>
-                </li>
-                <li>
-                    <a href="./planes.html">Planes</a>
-                </li>
-                <li>
-                    <a href="./nosotros.html">Nosotros</a>
-                </li>
-                <li>
-                    <a href="./contacto.html">Contacto</a>
-                </li>
-            </ul>
-        </nav>
 
         <!-- Copyright y redes sociales -->
 

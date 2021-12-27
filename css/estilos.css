@@ -1,6 +1,10 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: "Montserrat", sans-serif;
+  box-sizing: border-box;
+  font-weight: normal;
+  font-size: 1.3rem;
 }
 
 html {
@@ -8,25 +12,7 @@ html {
 }
 
 body {
-  font-family: "Montserrat", sans-serif;
-  font-weight: normal;
-  font-size: 1.3rem;
   background-color: #fbfbfb;
-}
-
-header {
-  background-color: #fbfbfb;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-
-a {
-  text-decoration: none;
-  color: #3c3c3c;
-  font-family: "Montserrat", sans-serif;
-  font-weight: normal;
 }
 
 table {
@@ -87,39 +73,55 @@ p {
   font-size: 16rem;
 }
 
-nav ul li {
-  display: inline;
-  padding-right: 20px;
-}
+/*          MENU          */
 
-ul {
-  list-style: none;
-  color: #3c3c3c;
-}
-
-/* MENU */
-.menuMain {
-  text-align: center;
-  color: #3c3c3c;
+nav {
   height: 90px;
-  width: 60%;
-  margin: auto;
+  background-color: #fbfbfb;
   display: flex;
-  flex-direction: row;
   align-items: center;
-  font-size: 1.7rem;
+  justify-content: space-between;
+  padding: 0px 50px 0px 100px;
 }
 
-.navMenu {
+nav ul {
   display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  align-items: center;
-  height: 70px;
-  width: 80%;
+  list-style: none;
 }
 
-.menuMain a img {
+nav ul li {
+  margin: 0 5px;
+}
+
+nav ul li a {
+  color: #3c3c3c;
+  text-decoration: none;
+  font-size: 1.6rem;
+  letter-spacing: 1px;
+  padding: 8px 10px;
+  transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #ec6b75;
+}
+
+.navLogoMenu a img {
+  height: 50px;
+}
+
+nav .menuHamburguesa i {
+  color: #3c3c3c;
+  font-size: 2.2rem;
+  cursor: pointer;
+  display: none;
+}
+
+#click {
+  display: none;
+}
+
+.navLogoMenu a img {
   height: 60px;
 }
 
@@ -134,20 +136,24 @@ ul {
   background-size: cover;
   background-position: center center;
   height: 400px;
-  display: grid;
-  grid-template-rows: 1fr 1fr;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
+  padding: 30px;
 }
 
 .bannerNuevosClientes h1 {
   font-size: 3rem;
   color: white;
-  padding-top: 150px;
+  padding: 0px 70px;
 }
 
 .bannerNuevosClientes p {
   font-size: 1.8rem;
   color: white;
+  padding-left: 50px;
+  padding-right: 50px;
   max-width: 1000px;
 }
 
@@ -296,22 +302,27 @@ ul {
   background-position: center center;
   color: #3c3c3c;
   height: 400px;
-  display: grid;
-  grid-template-rows: 1fr 1fr;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 
 .compromiso h2 {
+  color: white;
   text-align: center;
   font-size: 2.2rem;
-  padding-top: 150px;
+  padding-top: 40px;
   padding-bottom: 5px;
 }
 
 .compromiso p {
+  color: white;
   font-size: 1.4rem;
   text-align: center;
   padding-top: 20px;
+  padding-left: 50px;
+  padding-right: 50px;
   max-width: 1000px;
 }
 
@@ -330,7 +341,7 @@ ul {
 
 .contacto p {
   font-size: 1.4rem;
-  padding-bottom: 20px;
+  padding: 20px;
 }
 
 .formFlex {
@@ -343,7 +354,7 @@ ul {
 
 form {
   text-align: center;
-  padding-top: 30px;
+  padding: 30px 70px;
 }
 
 .formContacto input[type="text"] {
@@ -401,21 +412,24 @@ form {
   width: 720px;
 }
 
-/* FOOTER */
-footer {
-  margin: 50px;
-  text-align: center;
+.paginaContacto h2 {
+  font-size: 2.2rem;
+  padding: 20px;
 }
 
-footer li {
-  display: inline;
-}
-
-footer nav ul li a {
+.paginaContacto p {
+  padding: 15px 50px;
   font-size: 1.6rem;
 }
 
+/* FOOTER */
+footer {
+  margin: 10px 50px;
+  text-align: center;
+}
+
 .alineacionFooter {
+  background-color: #fbfbfb;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -457,20 +471,21 @@ footer nav ul li a {
 
 .diseñamosTuWeb {
   text-align: center;
-  background-image: url("../img/banner_4.jpg");
+  background-image: url("../img/banner_4.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   background-position: center center;
   height: 400px;
-  display: grid;
-  grid-template-rows: 1fr 1fr;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
+  padding: 20px 30px;
 }
 
 .diseñamosTuWeb h1 {
   color: white;
-  padding-top: 150px;
   font-size: 3rem;
 }
 
@@ -483,10 +498,12 @@ footer nav ul li a {
   background-color: #f2f2f2;
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
+  align-content: flex-start;
   justify-content: center;
   align-items: center;
   align-content: center;
-  padding: 120px 0px;
+  padding: 100px 30px;
 }
 
 .porQueElegirnos h2 {
@@ -505,14 +522,20 @@ footer nav ul li a {
   width: 40px;
 }
 
-.gridPorQueElegirnos {
-  display: grid;
-  grid-template-columns: 1fr 3fr 1fr 3fr 1fr 3fr;
+.flexPorQueElegirnos {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: flex-start;
   justify-content: center;
-  align-content: center;
-  align-items: flex-start;
-  padding: 20px 0px;
   max-width: 1200px;
+}
+
+.tarjetaPorQueElegirnos {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  max-width: 400px;
+  padding: 20px;
 }
 
 .flexImagenTabla {
@@ -523,7 +546,7 @@ footer nav ul li a {
   padding-right: 15px;
 }
 
-.alineacionElegirnos h3 {
+.flexPorQueElegirnos h3 {
   font-size: 1.8rem;
   color: #3c3c3c;
   text-align: left;
@@ -531,9 +554,10 @@ footer nav ul li a {
   padding-bottom: 10px;
 }
 
-.gridPorQueElegirnos p {
+.flexPorQueElegirnos p {
   font-size: 1.4rem;
   color: #3c3c3c;
+  padding-right: 25px;
 }
 
 .sectionTablaPlanes {
@@ -558,9 +582,14 @@ footer nav ul li a {
   width: 40px;
 }
 
+.iconColor {
+  color: #39b6b2;
+}
+
 /*  PLANES ANUALES  */
 .contenedorTabla {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: flex-start;
   margin: 0;
@@ -580,6 +609,7 @@ footer nav ul li a {
 .styleTabla td {
   padding: 15px;
   width: 350px;
+  font-size: 1.4rem;
 }
 
 .styleTabla tr:nth-child(even) {
@@ -616,7 +646,7 @@ footer nav ul li a {
   color: #ec6b75;
 }
 
-.precioEconomico h2 {
+.precioEconomico h3 {
   padding: 20px;
   font-size: 2.4rem;
 }
@@ -641,7 +671,7 @@ footer nav ul li a {
   color: #39b6b2;
 }
 
-.precioBasico h2 {
+.precioBasico h3 {
   padding: 20px;
   font-size: 2.4rem;
 }
@@ -666,7 +696,7 @@ footer nav ul li a {
   color: #ffcb77;
 }
 
-.precioPremium h2 {
+.precioPremium h3 {
   padding: 20px;
   font-size: 2.4rem;
 }
@@ -683,11 +713,11 @@ footer nav ul li a {
 
 /**/
 
-/*     Planes ECONOMICO - BASICO - PREMIUM     */
+/*     PAGINA Planes ECONOMICO - BASICO - PREMIUM     */
 
 .bannerPlanEconomico {
   text-align: center;
-  background-image: url("../img/banner_4.jpg");
+  background-image: url("../img/banner_4.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -705,6 +735,7 @@ footer nav ul li a {
 
 .bannerPlanEconomico p {
   max-width: 1000px;
+  padding: 0px 70px;
 }
 
 .sectionDescripcionPlan {
@@ -717,9 +748,21 @@ footer nav ul li a {
 
 .tablaDescripcionPlanes {
   display: grid;
-  grid-template-columns: 1fr 3fr;
+  grid-template-columns: 1fr 1fr;
   align-items: flex-start;
   justify-content: flex-start;
+}
+
+.tablaDescripcionPlanes div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+  padding-right: 15px;
+}
+
+.tablaDescripcionPlanes img {
+  width: 60%;
 }
 
 .botonDescripcionPlanEconomico {
@@ -728,7 +771,7 @@ footer nav ul li a {
   border-radius: 50px;
   width: 150px;
   height: 40px;
-  background-color: #ec6b75;
+  background-color: #39b6b2;
 }
 
 .botonDescripcionPlanEconomico a {
@@ -737,6 +780,38 @@ footer nav ul li a {
 
 .tablaPlanes td {
   padding: 15px;
+}
+
+.otrosPlanes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.otrosPlanesPlanes {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.otrosPlanesPlanes div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+}
+
+.otrosPlanesPlanes div button {
+  margin: 15px;
+  width: 130px;
+  height: 35px;
+  border-radius: 50px;
+  background-color: #39b6b2;
+  border: 1px solid #39b6b2;
+  color: white;
 }
 
 /**/
@@ -750,49 +825,85 @@ footer nav ul li a {
 /*     Nosotros      */
 
 .bannerQuienesSomos {
-  background-image: url("../img/banner_3.jpg");
+  background-image: url("../img/banner_3.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   background-position: center center;
   height: 400px;
+  padding: 30px;
 }
-
-.bannerQuienesSomosOverlay {
-  background-color: #fcca77;
-  opacity: 0.5;
-  height: 400px;
-}
-
-.bannerQuienesSomosOverlay p {
-  font-size: 4rem;
+.bannerQuienesSomos h1 {
+  font-size: 3rem;
   text-align: center;
   padding-top: 150px;
+  color: white;
 }
 
 .textoQuienesSomos {
-  padding-left: 60px;
-  padding-right: 60px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 70px 60px 30px 60px;
 }
 
 .textoQuienesSomos h2 {
-  padding-top: 70px;
+  padding-top: 50px;
+  font-size: 2.2rem;
 }
 
 .textoQuienesSomos p {
+  padding: 30px 50px;
+  font-size: 1.4rem;
+  max-width: 1200px;
+}
+
+.sectionEquipo {
+  background-color: white;
+  padding: 50px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.sectionEquipo h2 {
+  font-size: 2.2rem;
+  padding-bottom: 30px;
+}
+
+.contenedorCartaEquipo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  max-width: 1200px;
+  padding: 0px 40px 100px 40px;
+}
+
+.cartaIndividual {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 230px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.cartaIndividual img {
+  padding: 20px 0px;
+}
+
+.cartaIndividual h3 {
+  font-size: 1.4rem;
   padding-bottom: 20px;
 }
 
-.equipo h1 {
-  text-align: center;
-}
-
-.tablaEquipo {
-  padding-top: 30px;
-  padding-bottom: 30px;
-  padding-left: 60px;
-  padding-right: 60px;
-  width: 100%;
+.cartaIndividual p {
+  font-size: 1.2rem;
 }
 
 .avatar1 {
@@ -801,41 +912,6 @@ footer nav ul li a {
   background-position: center;
   height: 68px;
   padding-top: 20px;
-}
-
-.avatar2 {
-  background-image: url("../img/avatar_2.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 68px;
-}
-
-.avatar3 {
-  background-image: url("../img/avatar_3.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 68px;
-}
-
-.avatar4 {
-  background-image: url("../img/avatar_4.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 68px;
-}
-
-.avatar5 {
-  background-image: url("../img/avatar_1.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 68px;
-}
-
-.avatar6 {
-  background-image: url("../img/avatar_2.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 68px;
 }
 
 /**/
@@ -848,6 +924,17 @@ footer nav ul li a {
 
 /*     Contacto      */
 
+.sectionContacto {
+  padding: 0px;
+}
+
+.formContacto h2 {
+  font-size: 3rem;
+}
+
+.formContacto p {
+  text-align: center;
+}
 /**/
 
 /**/
@@ -860,7 +947,45 @@ footer nav ul li a {
 
 /**/
 
-/*      MEDIA QUERIES     */
+@media screen and (max-width: 1200px) {
+  .flexPorQueElegirnos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: center;
+    max-width: 1200px;
+  }
+
+  .tarjetaPorQueElegirnos {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    max-width: 300px;
+    padding: 20px;
+  }
+
+  .flexImagenTabla {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+    padding-right: 15px;
+  }
+
+  .flexPorQueElegirnos h3 {
+    font-size: 1.6rem;
+    color: #3c3c3c;
+    text-align: left;
+    max-width: 350px;
+    padding-bottom: 10px;
+  }
+
+  .flexPorQueElegirnos p {
+    font-size: 1.2rem;
+    color: #3c3c3c;
+    padding-right: 25px;
+  }
+}
 
 @media screen and (max-width: 979px) {
   /*       980     */
@@ -871,27 +996,603 @@ footer nav ul li a {
 
   /*    Tabla Servicios    */
 
-  .columnaTabla div h1 {
-    font-size: 1.4rem;
+  .columnaTabla div h3 {
+    font-size: 1.5rem;
     padding-top: 50px;
     padding-bottom: 50px;
   }
 
   .columnaTabla p {
     font-size: 1.2rem;
-  }
-
-  .imagenTabla {
-    width: 58px;
-    height: 58px;
-    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 100px;
   }
 }
 
-/**/
+.imagenTabla {
+  width: 58px;
+  height: 58px;
+  padding-bottom: 20px;
+}
 
-/**/
+@media screen and (max-width: 960px) {
+  /*  PLANES ANUALES  */
+  .contenedorTabla {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding-bottom: 30px;
+    padding-top: 70px;
+    width: 100%;
+  }
 
-/**/
+  .styleTabla {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 30px 15px;
+    text-align: center;
+  }
 
-/**/
+  .styleTabla td {
+    padding: 15px;
+    width: 350px;
+    font-size: 1.4rem;
+  }
+
+  .styleTabla tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+
+  .botonTabla {
+    border: none;
+    margin: 10px;
+    border-radius: 50px;
+    width: 150px;
+    height: 40px;
+  }
+
+  .botonTabla a {
+    font-size: 1.6rem;
+    color: white;
+  }
+
+  /* PLAN ECONOMICO */
+
+  .tbodyEconomico {
+    padding: 0;
+    border: solid 1px #ec6b75;
+  }
+
+  .stylePlanEconomico {
+    background-color: #ec6b75;
+    color: white;
+  }
+
+  .precioEconomico {
+    background-color: #f2f2f2;
+    color: #ec6b75;
+  }
+
+  .precioEconomico h3 {
+    padding: 20px;
+    font-size: 2.4rem;
+  }
+
+  .botonEconomico {
+    background-color: #ec6b75;
+  }
+
+  /* PLAN BASICO */
+  .tbodyBasico {
+    padding: 0;
+    border: solid 1px #39b6b2;
+  }
+
+  .stylePlanBasico {
+    background-color: #39b6b2;
+    color: white;
+  }
+
+  .precioBasico {
+    background-color: #f2f2f2;
+    color: #39b6b2;
+  }
+
+  .precioBasico h3 {
+    padding: 20px;
+    font-size: 2.4rem;
+  }
+
+  .botonBasico {
+    background-color: #39b6b2;
+  }
+
+  /* PLAN PREMIUM */
+  .tbodyPremium {
+    padding: 0;
+    border: solid 1px #ffcb77;
+  }
+
+  .stylePlanPremium {
+    background-color: #ffcb77;
+    color: white;
+  }
+
+  .precioPremium {
+    background-color: #f2f2f2;
+    color: #ffcb77;
+  }
+
+  .precioPremium h3 {
+    padding: 20px;
+    font-size: 2.4rem;
+  }
+
+  .botonPremium {
+    background-color: #ffcb77;
+  }
+
+  .flexPorQueElegirnos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: center;
+    max-width: 960px;
+  }
+
+  .tarjetaPorQueElegirnos {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    max-width: 250px;
+    padding: 20px 5px;
+  }
+
+  .flexImagenTabla {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+    padding-right: 10px;
+  }
+
+  .flexPorQueElegirnos h3 {
+    font-size: 1.6rem;
+    color: #3c3c3c;
+    text-align: left;
+    max-width: 300px;
+    padding-bottom: 10px;
+  }
+
+  .flexPorQueElegirnos p {
+    font-size: 1.2rem;
+    color: #3c3c3c;
+    padding-right: 25px;
+  }
+}
+
+@media screen and (max-width: 799px) {
+  nav .menuHamburguesa i {
+    display: block;
+  }
+
+  #click:checked ~ .menuHamburguesa i::before {
+    content: "\f00d";
+  }
+
+  nav ul {
+    position: fixed;
+    top: 80px;
+    left: -100%;
+    background-color: #3c3c3c;
+    height: 100vh;
+    width: 100%;
+    display: block;
+    text-align: center;
+    transition: all 0.3s ease;
+  }
+
+  #click:checked ~ ul {
+    left: 0;
+  }
+
+  nav ul li {
+    margin: 40px 0;
+  }
+
+  nav ul li a {
+    font-size: 2rem;
+    display: block;
+    color: white;
+  }
+
+  nav ul li a:hover {
+    color: #ec6b75;
+  }
+
+  nav .menuHamburguesa i:hover {
+    color: #ec6b75;
+    transition: all 0.3s ease;
+  }
+
+  /* CONTACTO */
+  .contacto {
+    text-align: center;
+    padding-top: 50px;
+  }
+
+  .formContacto h2 {
+    text-align: center;
+    font-size: 2.2rem;
+    padding-top: 100px;
+    padding-bottom: 20px;
+  }
+
+  .contacto p {
+    font-size: 1.4rem;
+    padding-bottom: 20px;
+  }
+
+  .formFlex {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+
+  form {
+    text-align: center;
+    padding-top: 30px;
+  }
+
+  .formContacto input[type="text"] {
+    border: 1px solid #ec6b75;
+    border-radius: 4px;
+    margin: 10px;
+    width: 150px;
+  }
+
+  .formContacto input[type="email"] {
+    border: 1px solid #ec6b75;
+    border-radius: 4px;
+    margin: 10px;
+    width: 150px;
+  }
+
+  .formContacto input[type="tel"] {
+    border: 1px solid #ec6b75;
+    border-radius: 4px;
+    margin: 10px;
+    width: 150px;
+  }
+
+  .formTextArea {
+    padding: 5px;
+    font-family: "Montserrat", sans-serif;
+    height: 100px;
+    border: 1px solid #ec6b75;
+    border-radius: 4px;
+    width: 500px;
+  }
+
+  .textoQuienesSomos {
+    padding: 20px;
+  }
+
+  .contenedorCartaEquipo {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    width: 100%;
+    padding: 20px 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 2.6rem;
+  }
+
+  .bannerNuevosClientes p {
+    font-size: 1.4rem;
+  }
+
+  .ico-3x {
+    font-size: 3.8rem;
+  }
+
+  .alineacionElegirnos h3 {
+    font-size: 1.4rem;
+  }
+
+  .alineacionElegirnos p {
+    font-size: 1.2rem;
+  }
+
+  .alineacionTablaServicios {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .tablaServicios {
+    width: 100vw;
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding: 20px;
+  }
+
+  .separacionTabla {
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 100%;
+  }
+
+  .columnaTabla {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: white;
+    color: #3c3c3c;
+    width: 100%;
+  }
+
+  .columnaTabla div h3 {
+    font-size: 1.8rem;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .columnaTabla p {
+    font-size: 1.4rem;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 100px;
+  }
+
+  .imagenTabla {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 68px;
+    height: 68px;
+    padding-bottom: 20px;
+  }
+
+  /*    LINEAS TABLA SERVICIOS    */
+  .lineaColumnaUno::after {
+    content: "";
+    display: block;
+    background-color: #ec6b75;
+    height: 4px;
+    width: 100%;
+  }
+
+  .lineaColumnaDos::after {
+    content: "";
+    display: block;
+    background-color: #6a5acd;
+    height: 4px;
+    width: 100%;
+  }
+
+  .lineaColumnaTres::after {
+    content: "";
+    display: block;
+    background-color: #3cb371;
+    height: 4px;
+    width: 100%;
+  }
+
+  .lineaColumnaCuatro::after {
+    content: "";
+    display: block;
+    background-color: #fcca77;
+    height: 4px;
+    width: 100%;
+  }
+
+  .lineaColumnaCinco::after {
+    content: "";
+    display: block;
+    background-color: #15c3b9;
+    height: 4px;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .compromiso h2 {
+    padding: 10px 20px;
+  }
+  .compromiso p {
+    padding: 10px 20px;
+  }
+
+  .ico-3x {
+    font-size: 3rem;
+  }
+
+  .alineacionElegirnos h3 {
+    font-size: 1.3rem;
+  }
+
+  .alineacionElegirnos p {
+    font-size: 1rem;
+  }
+
+  /* CONTACTO */
+  .contacto {
+    text-align: center;
+    padding-top: 50px;
+  }
+
+  .formContacto h2 {
+    text-align: center;
+    font-size: 2.2rem;
+    padding-top: 20px;
+    padding-bottom: 15px;
+  }
+
+  .contacto p {
+    font-size: 1.4rem;
+    padding-bottom: 20px;
+    padding-top: 20px;
+  }
+
+  .formFlex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+
+  form {
+    text-align: center;
+    padding-top: 10px;
+  }
+
+  .formContacto input[type="text"] {
+    border: 1px solid #ec6b75;
+    border-radius: 4px;
+    margin: 10px;
+    width: 100%;
+  }
+
+  .formContacto input[type="email"] {
+    border: 1px solid #ec6b75;
+    border-radius: 4px;
+    margin: 10px;
+    width: 100%;
+  }
+
+  .formContacto input[type="tel"] {
+    border: 1px solid #ec6b75;
+    border-radius: 4px;
+    margin: 10px;
+    width: 100%;
+  }
+
+  .formTextArea {
+    padding: 5px;
+    font-family: "Montserrat", sans-serif;
+    height: 100px;
+    border: 1px solid #ec6b75;
+    border-radius: 4px;
+    width: 100%;
+  }
+
+  .bannerQuienesSomos h1 {
+    font-size: 2.7rem;
+  }
+
+  .textoQuienesSomos h2 {
+    font-size: 1.8rem;
+  }
+
+  .textoQuienesSomos p {
+    font-size: 1.2rem;
+  }
+
+  .flexPorQueElegirnos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: center;
+    max-width: 550px;
+  }
+
+  .tarjetaPorQueElegirnos {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    max-width: 400px;
+    padding: 20px 5px;
+  }
+
+  .flexImagenTabla {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+    padding-right: 10px;
+  }
+
+  .flexPorQueElegirnos h3 {
+    font-size: 1.6rem;
+    color: #3c3c3c;
+    text-align: justify;
+    max-width: 300px;
+    padding-bottom: 10px;
+  }
+
+  .flexPorQueElegirnos p {
+    font-size: 1.2rem;
+    color: #3c3c3c;
+    padding-right: 25px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .navLogoMenu a img {
+    height: 40px;
+  }
+
+  /* FOOTER */
+  footer {
+    margin: 10px 20px;
+    text-align: center;
+  }
+
+  .alineacionFooter {
+    background-color: #fbfbfb;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footerGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    max-width: 1000px;
+    padding-top: 50px;
+  }
+
+  .copyrightFooter p {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    font-size: 1rem;
+    color: #3c3c3c;
+  }
+
+  .imagenesFooter a img {
+    height: 40px;
+    padding: 2px;
+  }
+
+  .paginaContacto h2 {
+    font-size: 2rem;
+  }
+
+  .paginaContacto p {
+    font-size: 1.4rem;
+    padding: 20px;
+  }
+}

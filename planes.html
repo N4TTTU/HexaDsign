@@ -5,6 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Planes | HexaDsign</title>
+    <!-- ICON FONTS -->
+    <link rel="stylesheet" href="libs/iconHexaDsign/style.css">
+    <script src="https://kit.fontawesome.com/0138bab574.js" crossorigin="anonymous"></script>
+    <!-- ICON FONTS -->
+    <link rel="stylesheet" href="libs/iconHexaDsign/style.css">
+    
     <!-- GOOGLE FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,11 +19,21 @@
     <link rel="stylesheet" href="./css/estilos.css">
 </head>
 <body>
-    <header class="menuMain">
-        <a href="./index.html">
-            <img src="./img/HDLogo.png" alt="Logo HexaDsign">
-        </a>
-        <nav class="menuMain navMenu">
+
+    <header>
+        <nav>
+            <div class="navLogoMenu">
+                <a href="./index.html">
+                    <img src="./img/Logo.png" alt="Logo HexaDsign">
+                </a>
+            </div>
+            
+            <input type="checkbox" id="click">
+
+            <label for="click" class="menuHamburguesa">
+                <i class="fas fa-bars"></i>
+            </label>
+
             <ul>
                 <li>
                     <a href="./index.html">Inicio</a>
@@ -33,6 +49,7 @@
                 </li>
             </ul>
         </nav>
+
     </header>
 
     <section class="diseñamosTuWeb">
@@ -49,67 +66,67 @@
 
         <h2>¿Por qué elegirnos?</h2>
 
-        <div class="gridPorQueElegirnos">
+        <div class="flexPorQueElegirnos">
 
-            <div class="flexImagenTabla">
-                <img src="./img/fb_icon.png" alt="">
-            </div>
-            <div class="alineacionElegirnos">
-                <h3>Sin comisiones</h3>
-                <p>No hacemos cobros ni tarifas adicionales. El costo pagado en un principio es por todos los servicios especificados.</p>
-            </div>
-            <div class="flexImagenTabla">
-                <img src="./img/fb_icon.png" alt="">
-            </div>
-            <div class="alineacionElegirnos">
-                <h3>Todo incluído</h3>
-                <p>Todos nuestros planes tienen incluido el dominio, hosting y correos empresariales por al menos un año.</p>
-            </div>
-            <div class="flexImagenTabla">
-                <img src="./img/fb_icon.png" alt="">
-            </div>
-            <div class="alineacionElegirnos">
-                <h3>Opciones</h3>
-                <p>Al preferirnos tienes la opción de presentarnos tu diseño de la página o que nosotros la diseñemos desde cero. En ambas opciones puedes elegir cambios y adaptaciones.</p>
+            <div class="tarjetaPorQueElegirnos">
+                <div class="flexImagenTabla">
+                    <span class="icon-chevron-right ico-3x iconColor"></span>
+                </div>
+                <div>
+                    <h3>Sin comisiones</h3>
+                    <p>No hacemos cobros ni tarifas adicionales. El costo pagado en un principio es por todos los servicios especificados.</p>
+                </div>
             </div>
 
-        </div>
-
-        <div class="gridPorQueElegirnos">
-
-            <div class="flexImagenTabla">
-                <img src="./img/fb_icon.png" alt="">
+            <div class="tarjetaPorQueElegirnos">
+                <div class="flexImagenTabla">
+                    <span class="icon-star ico-3x iconColor"></span>
+                </div>
+                <div>
+                    <h3>Todo incluído</h3>
+                    <p>Todos nuestros planes tienen incluido el dominio, hosting y correos empresariales por al menos un año.</p>
+                </div>
             </div>
 
-            <div class="alineacionElegirnos">
+            <div class="tarjetaPorQueElegirnos">
+                <div class="flexImagenTabla">
+                    <span class="icon-thumbs-up ico-3x iconColor"></span>
+                </div>
+                <div>
+                    <h3>Opciones</h3>
+                    <p>Al preferirnos tienes la opción de presentarnos tu diseño de la página o que nosotros la diseñemos desde cero. En ambas opciones puedes elegir cambios y adaptaciones.</p>
+                </div>
+            </div>
+
+            <div class="tarjetaPorQueElegirnos">
+                <div class="flexImagenTabla">
+                    <span class="icon-file ico-3x iconColor"></span>
+                </div>
                 <div>
                     <h3>Correcciones</h3>
                     <p>Nosotros te presentamos la página y puedes hacer los cambios que necesites para personalizarla a tu medida.</p>
                 </div>
             </div>
 
-            <div class="flexImagenTabla">
-                <img src="./img/fb_icon.png" alt="">
-            </div>
-
-            <div class="alineacionElegirnos">
+            <div class="tarjetaPorQueElegirnos">
+                <div class="flexImagenTabla">
+                    <span class="icon-check ico-3x iconColor"></span>
+                </div>
                 <div>
                     <h3>Optimización</h3>
                     <p>Nuestros diseños cumplen con lo necesario para tener un buen posicionamiento en las búsquedas de Google.</p>
                 </div>
             </div>
 
-            <div class="flexImagenTabla">
-                <img src="./img/fb_icon.png" alt="">
-            </div>
-
-            <div class="alineacionElegirnos">
+            <div class="tarjetaPorQueElegirnos">
+                <div class="flexImagenTabla">
+                    <span class="icon-user-check ico-3x iconColor"></span>
+                </div>
                 <div>
                     <h3>Soporte</h3>
                     <p>A través de nuestro canal de soporte responderemos todas las preguntas que tengas en el menor tiempo posible.</p>
                 </div>
             </div>
-
         </div>
         
 
@@ -128,9 +145,9 @@
             <table class="styleTabla">
                 <tbody class="tbodyEconomico">
                     <tr class="stylePlanEconomico">
-                        <td><h1>PLAN ECONÓMICO</h1></td>
+                        <td><h2>PLAN ECONÓMICO</h2></td>
                     </tr>
-                    <td class="precioEconomico"><h2> $0 CLP </h2></td>
+                    <td class="precioEconomico"><h3> $0 CLP </h3></td>
                     <tr><td> Pago anual </td></tr>
                     <tr><td>One Page</td></tr>
                     <tr><td>3 correos empresariales</td></tr>
@@ -144,16 +161,16 @@
                     <tr><td>  </td></tr>
                     <tr><td>  </td></tr>
                     <tr><td></td></tr>
-                    <tr><td><button class="botonTabla botonEconomico"> <a href="./planes-economico.html">Ver más</a></button></td></tr>
+                    <tr><td><button class="botonTabla botonEconomico"> <a href="./plan-economico.html">Ver más</a></button></td></tr>
                 </tbody>
             </table>
 
             <table class="styleTabla">
                 <tbody class="tbodyBasico">    
                     <tr class="stylePlanBasico">
-                        <td><h1>PLAN BÁSICO</h1></td>
+                        <td><h2>PLAN BÁSICO</h2></td>
                     </tr>
-                    <td class="precioBasico"><h2> $0 CLP </h2></td>
+                    <td class="precioBasico"><h3> $0 CLP </h3></td>
                     <tr><td> Pago anual </td></tr>
                     <tr><td> 5 páginas informativas </td></tr>
                     <tr><td> 10 correos empresariales</td></tr>
@@ -167,7 +184,7 @@
                     <tr><td>  </td></tr>
                     <tr><td>  </td></tr>
                     <tr><td></td></tr>
-                    <tr><td><button class="botonTabla botonBasico"> <a href="./planes-economico.html">Ver más</a></button></td></tr>
+                    <tr><td><button class="botonTabla botonBasico"> <a href="./plan-economico.html">Ver más</a></button></td></tr>
                 </tbody>
             </table>
 
@@ -175,9 +192,9 @@
             <table class="styleTabla">
                 <tbody class="tbodyPremium">    
                     <tr class="stylePlanPremium">
-                        <td><h1>PLAN BÁSICO</h1></td>
+                        <td><h2>PLAN BÁSICO</h2></td>
                     </tr>
-                    <td class="precioPremium"><h2> $0 CLP </h2></td>
+                    <td class="precioPremium"><h3> $0 CLP </h3></td>
                     <tr><td> Pago anual </td></tr>
                     <tr><td> 5 páginas informativas </td></tr>
                     <tr><td> 10 correos empresariales</td></tr>
@@ -191,31 +208,13 @@
                     <tr><td> Carro de compras </td></tr>
                     <tr><td> Sistema de pagos </td></tr>
                     <tr><td></td></tr>
-                    <tr><td><button class="botonTabla botonPremium"> <a href="./planes-economico.html">Ver más</a></button></td></tr>
+                    <tr><td><button class="botonTabla botonPremium"> <a href="./plan-economico.html">Ver más</a></button></td></tr>
             </table>
         </div>
 
     </section>
 
     <footer>
-        
-        <!-- Menú footer -->
-        <nav>
-            <ul>
-                <li>
-                    <a href="./index.html">Inicio</a>
-                </li>
-                <li>
-                    <a href="./planes.html">Planes</a>S
-                </li>
-                <li>
-                    <a href="./nosotros.html">Nosotros</a>
-                </li>
-                <li>
-                    <a href="./contacto.html">Contacto</a>
-                </li>
-            </ul>
-        </nav>
 
         <!-- Copyright y redes sociales -->
 

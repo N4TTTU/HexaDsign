@@ -7,6 +7,7 @@
     <title>Inicio | HexaDsign</title>
     <!-- ICON FONTS -->
     <link rel="stylesheet" href="libs/iconHexaDsign/style.css">
+    <script src="https://kit.fontawesome.com/0138bab574.js" crossorigin="anonymous"></script>
     
     <!-- GOOGLE FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,11 +17,21 @@
     <link rel="stylesheet" href="./css/estilos.css">
 </head>
 <body>
-    <header class="menuMain">
-        <a href="./index.html">
-            <img src="./img/HDLogo.png" alt="Logo HexaDsign">
-        </a>
-        <nav class="menuMain navMenu">
+
+    <header>
+        <nav>
+            <div class="navLogoMenu">
+                <a href="./index.html">
+                    <img src="./img/Logo.png" alt="Logo HexaDsign">
+                </a>
+            </div>
+            
+            <input type="checkbox" id="click">
+
+            <label for="click" class="menuHamburguesa">
+                <i class="fas fa-bars"></i>
+            </label>
+
             <ul>
                 <li>
                     <a href="./index.html">Inicio</a>
@@ -36,6 +47,7 @@
                 </li>
             </ul>
         </nav>
+
     </header>
 
     <section class="bannerNuevosClientes">
@@ -192,24 +204,6 @@
     </section>
 
     <footer>
-        
-        <!-- Menú footer -->
-        <nav>
-            <ul>
-                <li>
-                    <a href="./index.html">Inicio</a>
-                </li>
-                <li>
-                    <a href="./planes.html">Planes</a>
-                </li>
-                <li>
-                    <a href="./nosotros.html">Nosotros</a>
-                </li>
-                <li>
-                    <a href="./contacto.html">Contacto</a>
-                </li>
-            </ul>
-        </nav>
 
         <!-- Copyright y redes sociales -->
 
